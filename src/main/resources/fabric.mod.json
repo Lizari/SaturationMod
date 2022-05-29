@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "saturation",
+  "version": "${version}",
+  "name": "Saturation",
+  "description": "You can see  hiding saturation value",
+  "authors": [
+    "XPS"
+  ],
+  "contact": {
+    "homepage": "https://lizari.space/"
+  },
+  "license": "MIT",
+  "icon": "assets/saturation/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "space.lizari.Saturation"
+    ],
+    "modmenu": [
+      "space.lizari.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "minecraft": "1.18.*",
+    "java": ">=17"
+  }
+}
