@@ -21,7 +21,7 @@ public class Saturation implements ModInitializer {
         instance = this;
 
         this.config = AutoConfig.register(ModConfig.class, GsonConfigSerializer::new).getConfig();
-        new Hud();
+        HudRenderCallback.EVENT.register(new Hud());
         LOGGER.info("Saturation Mod has been Initialized");
     }
     public ModConfig getConfig() {

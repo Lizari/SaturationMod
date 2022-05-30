@@ -16,9 +16,6 @@ import java.text.DecimalFormat;
 
 @Environment(EnvType.CLIENT)
 public class Hud implements HudRenderCallback {
-    public Hud() {
-        HudRenderCallback.EVENT.register(this);
-    }
 
     @Override
     public void onHudRender(MatrixStack matrixStack, float tickDelta) {
