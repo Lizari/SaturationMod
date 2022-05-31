@@ -73,8 +73,8 @@ public enum Position {
                 Position.LOW_LEFT.setWidth(offsetWidth);
                 break;
             case LOW_CENTER:
-                Position.LOW_CENTER.setHeight(height - 39);
-                Position.LOW_CENTER.setWidth((width / 2) - 7);
+                Position.LOW_CENTER.setHeight(height - 45);
+                Position.LOW_CENTER.setWidth((width / 2) - 3);
                 break;
             case LOW_RIGHT:
                 Position.LOW_RIGHT.setHeight(height - 15);
