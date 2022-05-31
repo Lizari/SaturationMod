@@ -28,11 +28,7 @@ public class Hud implements HudRenderCallback {
 
         final HungerManager manager = player.getHungerManager();
         final TextRenderer textRenderer = client.textRenderer;
-        final BigDecimal saturation = BigDecimal.valueOf(manager.getSaturationLevel());
-        final DecimalFormat formatter = new DecimalFormat("#.#");
-        formatter.setMaximumFractionDigits(1);
-        formatter.setMaximumIntegerDigits(2);
-        final String text = formatter.format(saturation);
+        final String text = String.valueOf((int) manager.getSaturationLevel());
         Position.setDefaultValue(client.getWindow());
 
         if (config.toggleShadow) {
